@@ -32,7 +32,7 @@ public class nailGelActivity extends AppCompatActivity implements View.OnClickLi
         imageView=findViewById(R.id.imageView);
         imageView.setOnClickListener(this);
         takePhoto.setOnClickListener(this);
-        take photo=findViewById(R.id.takePhotoButton);
+        takePhoto =findViewById(R.id.takePhotoButton);
 
 
 
