@@ -10,4 +10,7 @@
         android:id="@+id/home" />
     <item android:title="@string/help"
         android:id="@+id/help"  />
+    <item android:id="@+id/logout"
+        android:title="log out"/>
+
 </menu>

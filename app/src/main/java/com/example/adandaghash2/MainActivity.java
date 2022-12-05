@@ -59,6 +59,25 @@ MainActivity extends AppCompatActivity {
             Intent i=new Intent(this,listActivity.class);
             startActivity(i);
 
+        }else if(item.getItemId() == R.id.logout){
+            AlertDialog.Builder dialog=new AlertDialog.Builder(this);
+            dialog.setTitle("Back Button Was pressed !");
+            dialog.setMessage("Are you sure you want to Exit ");
+            // in case the user chose no ,nothimg happens
+            dialog.setNegativeButton("No",null);
+            //when the user clicks on the yes button the application closes
+            dialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+
+                    MainActivity.this.finish();
+
+                }
+
+            });
+            dialog.setIcon(R.drawable.ic_baseline_block_24);
+            AlertDialog alertDialog =dialog.create();
+            alertDialog.show();
         }
         return true ;
     }
