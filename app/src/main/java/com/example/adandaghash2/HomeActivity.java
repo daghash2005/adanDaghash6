@@ -2,234 +2,12 @@ package com.example.adandaghash2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 
-public class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -237,9 +15,15 @@ HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    public boolean onCreateOptionsMenu (Menu menu){
-        getMenuInflater().inflate(R.menu.menuexample, menu);
-        return true;
-    }
+   public void NailBits(View view){
+       Intent i ;
+       i= new Intent(this,NailBits.class);
+       startActivity(i);
 
+    }
+    public void NailBits(View view) {
+        Intent i;
+        i= new Intent(this,NailBits.class);
+        startActivity(i);
+    }
 }
